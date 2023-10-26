@@ -23,6 +23,9 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 app.use("/students", require("./Routes/StudentsRoute.js"));
+app.use("/", (req, res) => {
+  res.send("welcome to student management");
+});
 
 app.listen(PORT, () => {
   console.log(`Server running on PORT: ${PORT}`);
