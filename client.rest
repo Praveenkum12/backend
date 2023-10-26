@@ -1,0 +1,28 @@
+
+GET http://localhost:3500/students/getstudents
+
+###
+POST http://localhost:3500/students/addstudent
+Content-Type: application/json
+
+{
+  "firstName": "Madan",
+  "lastName": "Gowri",
+  "age": 25,
+  "phoneNumber": "9952727521"
+}
+
+###
+PUT http://localhost:3500/students/updatestudent/6383233644
+Content-Type: application/json
+
+{
+  "firstName": "Jimmy",
+}
+
+###
+DELETE http://localhost:3500/students/deletestudent/6529400a1b8a8a386d9d71c
+
+//Single Student
+###
+GET http://localhost:3500/students/getstudent/6527fe3cbfb4c97e0e4f7d83a
